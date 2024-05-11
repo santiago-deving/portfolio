@@ -1,6 +1,6 @@
 import telebot
 from datetime import datetime
-import json
+# import json
 
 CHAVE_API = '6874492595:AAEELvm4sTYLMjv2OvIUena8warMR6NJASI'
 bot = telebot.TeleBot(CHAVE_API)
@@ -19,7 +19,7 @@ def reg(mensagem):
 
 @bot.message_handler(commands=["cad"])
 # Função Cadastrar Funcionário
-def reg(mensagem):
+def cad(mensagem):
     #Busca o id na lista de cadastros, se não encontrar, vai p/ o register_next_step_handler
     for i in cadastro_func:
         if i['id'] == mensagem.chat.id:
@@ -46,7 +46,7 @@ def cad_num(mensagem, novo_func):
 @bot.message_handler(commands=["mha"])
 # Função Marcar Hora Atual
 
-def reg(mensagem):
+def reg_mha(mensagem):
     func_id = mensagem.chat.id
     hora_ponto = datetime.now()
 
@@ -64,7 +64,7 @@ def reg(mensagem):
 @bot.message_handler(commands=["mhp"])
 # Função Marcar Hora Personalizada
 
-def reg(mensagem):
+def reg_mhp(mensagem):
     resposta = bot.send_message(mensagem.chat.id, "Digite o dia e a hora que deseja marcar:\n(formato: DD/MM/AAAA - hh:mm)")
     bot.register_next_step_handler(resposta, mhp_reg)
     
