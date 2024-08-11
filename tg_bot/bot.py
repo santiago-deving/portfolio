@@ -60,6 +60,8 @@ def reg_mha(mensagem):
     
     total_pontos[func_id] = [hora_ponto] #caso não seja encontrado, é criada uma lista no dicionario para o funcionário
     bot.send_message(mensagem.chat.id, "O seu ponto foi marcado!")
+    # print(total_pontos)
+    # print(mensagem)
 
 @bot.message_handler(commands=["mhp"])
 # Função Marcar Hora Personalizada
