@@ -7,7 +7,7 @@ CORS(app)
 
 app.secret_key = '19i320od$'
 global login_key
-login_key = 'G15estetsys'
+login_key = 'estetsys'
 # teste commit
 # Rotas das páginas
 
@@ -526,8 +526,6 @@ def buscar_cliente():
         cod   = resultado[3]
         cliente = [doc,nome,tel,cod]
         session['cliente'] = cliente
-
-        print(session['cliente'])
         
         if valid_login() == False:
             return redirect(url_for("login"))
