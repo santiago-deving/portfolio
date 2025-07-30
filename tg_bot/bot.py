@@ -54,14 +54,13 @@ def reg_mha(mensagem):
         if i == func_id:
             total_pontos[func_id].append(hora_ponto)
             bot.send_message(func_id, "O seu ponto foi marcado!")
-            # print(total_pontos)
-            # print(mensagem)
+            print(total_pontos)
+            print(mensagem)
             return #caso o funcionario seja encontrado
     
     total_pontos[func_id] = [hora_ponto] #caso não seja encontrado, é criada uma lista no dicionario para o funcionário
     bot.send_message(mensagem.chat.id, "O seu ponto foi marcado!")
-    # print(total_pontos)
-    # print(mensagem)
+    print(total_pontos)
 
 @bot.message_handler(commands=["mhp"])
 # Função Marcar Hora Personalizada
@@ -78,14 +77,14 @@ def mhp_reg(mensagem):
         if i == func_id:
             total_pontos[func_id].append(data_mhp)
             bot.send_message(func_id, "O seu ponto foi marcado!")
-            #print(total_pontos)
-            #print(mensagem)
+            print(total_pontos)
+            print(mensagem)
             return
     
     total_pontos[func_id] = [data_mhp]
     bot.send_message(func_id, "O seu ponto foi marcado!")
-    #print(total_pontos)
-    #print(mensagem)
+    print(total_pontos)
+    print(mensagem)
 
 #Busca nova mensagem
 def verificar(mensagem):
