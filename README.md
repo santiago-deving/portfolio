@@ -10,7 +10,7 @@ O segundo trata-se de um aplicativo web criado com o intuito de permitir com que
 
 <h3>Tg_bot</h3>
 
-<p>Este projeto foi criado utilizando a biblioteca para python telebot. Esta biblioteca provê recursos para respostas automatizadas em chat Telegram de forma gratuita. Para poder criar o bot de fato, foi usado o bot father e pode ser encontrado <a href="http://t.me/noelecpoint_bot" target="_blank">aqui</a>.</p>
+<p>Este projeto foi criado utilizando a biblioteca para python telebot. Esta biblioteca provê recursos para respostas automatizadas em chat Telegram de forma gratuita. Para poder criar o bot de fato, foi usado o bot father e pode ser encontrado <a href="http://t.me/noelecpoint_bot" target="blank">aqui</a>.</p>
 
 <h3>Estetsys</h3>
 
