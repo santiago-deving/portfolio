@@ -2,7 +2,7 @@ import telebot
 from datetime import datetime
 # import json
 
-CHAVE_API = '6874492595:AAEELvm4sTYLMjv2OvIUena8warMR6NJASI'
+CHAVE_API = 'secreta'
 bot = telebot.TeleBot(CHAVE_API)
 
 decis = 0
